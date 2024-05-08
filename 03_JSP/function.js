@@ -111,7 +111,7 @@ let hi1 = (user) => {document.write(user + "님 반갑습니다")};
 hi1("javis");
 
 // 콜백함수
-function randomQuiz(answer) {
+function randomQuiz(answer,printYes,printNo) {
     if(answer === 'i love you') {
         printYes();
     } else printNo();
@@ -122,5 +122,5 @@ const printYes = function(){
 const printNo = function(){
     console.log('no');
 }
-randomQuiz('i love you');
-randomQuiz('worng');
+randomQuiz('i love you', printYes, printNo);
+randomQuiz('worng', printYes, printNo);
