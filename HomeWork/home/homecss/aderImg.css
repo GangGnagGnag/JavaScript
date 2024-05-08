@@ -1,0 +1,15 @@
+#log{
+    position: absolute;
+    transition-property: all;
+    transition-duration: 2ms;
+    transition-delay: 0s;
+    border: white;
+    transition-timing-function: ease-in;
+
+    transition: all 3s 0s ease-in;
+}
+#log:hover{
+    width: 1000px;
+    height: 1000px;
+    margin-left: 100px;
+}

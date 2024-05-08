@@ -14,7 +14,8 @@
     padding: 10px 20px; /* 여백 추가 */
     background-color: white; /* 배경색 지정 */
     border-radius: 5px; /* 둥근 테두리 추가 */
-    color: black
+    color: black;
+    font-size: 1em;
 }
 
 #menu_wrap li:hover {
@@ -78,6 +79,9 @@
 #table {
     border-collapse: collapse;
     width: 100%;
+    width: 40%; 
+    margin: 0 auto;
+    border: 1px solid black 
 }
 
 th, td {
@@ -90,12 +94,21 @@ th {
     background-color: rgb(174, 203, 255);
     color: blue;
 }
-#table{
-    width: 40%; 
-    margin: 0 auto;
-    border: 1px solid black ;
-}
+
 #in_footer{
     margin-top: 80px;
     font-size: x-small;
+}
+#shoTable{
+    font-size: 1.1em;
+    color: blue;
+}
+
+#table1 {
+    border-collapse: collapse;
+    width: 100%;
+    width: 40%; 
+    margin: 0 auto;
+    border: 1px solid black;
+    color: blue;
 }
