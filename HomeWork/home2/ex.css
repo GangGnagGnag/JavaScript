@@ -1,0 +1,87 @@
+@media screen and (min-width:1200px){
+	
+	
+	
+	/*공통영역*/
+	#wrap{
+		max-width:1920px;
+		/*=>모니터 해상도에 따라 홈페이지가 무너지는걸 
+		방지하기위해 1920까지 맥시멈으로 크기 잡아둠*/
+		margin:0 auto;
+	}
+	
+	header,section,footer{
+		width:100%;
+		/*background-color:lightgray;*/
+	}
+	
+	#in_header,.container,#in_footer{
+		width:1200px;
+		/*background-color: tan;*/
+		margin:0 auto;
+		overflow: hidden;
+	}
+	
+	.title_wrap{
+		width:100%;
+		/*background-color:gold;*/
+	}
+	.title_wrap>h3{
+		width:100%;
+		text-align: center;
+		font-size:36px;
+		font-weight: 900;
+	}
+	.title_wrap>p{
+		width:100%;
+		text-align: center;
+		font-weight: 100;
+		color:#555;
+		margin-top:20px;
+	}
+	
+	/*공통영역*/
+	
+	
+	header,#in_header{
+		height:85px;
+	}
+	
+	#logo{
+		width:auto;
+		height:auto;
+		/*background-color:crimson;*/
+		float:left;
+		font-size:24px;
+		font-weight: 900;
+		letter-spacing:-1px;
+		/*=>글자 자간 조절*/
+		margin-top:45px;
+	}
+	
+	#menu_wrap{
+		width:500px;
+		height:auto;
+		/*background-color: teal;*/
+		float: left;
+		display: flex;
+		justify-content: space-between;
+		margin:50px 0 0 100px;
+	}
+	
+	#menu_wrap>li{
+		width:auto;
+		height:auto;
+		/*background-color:gold;*/
+		font-size:18px;
+		font-weight:900;
+	}
+	
+	#mo_wrap{
+		display: none;
+	}
+
+    a{
+        text-decoration: none;
+    }
+}
