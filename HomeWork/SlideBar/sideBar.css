@@ -1,0 +1,51 @@
+*{
+    padding: 0; margin: 0; /*전체 padding과 margin을 0으로*/
+
+}
+li{
+    list-style: none;   /*리스트 만들면 생성되는. 없애기*/
+
+}
+a{
+    text-decoration: none; /*링크 있는글자 밑줄 없애기*/
+    font-size: 2em;
+}
+
+.menu{
+    width: 800;
+    overflow: hidden;   /* 내용이 넘치는경우 오버플로우 숨김 */
+    margin: auto;   /*메뉴 가운데 정렬*/
+}
+
+.menu > li {
+    width: 20%;
+    float: left;
+    text-align: center; /* 메뉴안에 있는 텍스트 가운데 정렬 */
+}
+
+.menu a{
+    color: blue;
+    text-align: center; /* 링크 텍스트 가운데 정렬 */
+}
+
+.submenu > li{
+    line-height: 50px; /* 하위 메뉴 줄 높이 50픽셀로 . */
+    background-color: bisque;
+}
+
+.submenu{
+    height: 0;
+    overflow: hidden;
+}
+
+.menu > li:hover {
+    background-color: blanchedalmond;
+}
+
+.menu > li:hover .submenu {
+    height: 250px;
+    transition-duration: 0.5s;
+}
+.top{
+    background-color: blueviolet;
+}
