@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        #out_box {
+            position: relative;
+            width: 800px; 
+            height: 600px; 
+            margin: 500px auto;
+            background-image: url('adersig.avif');
+            background-size: cover; 
+        }
+        #text_box {
+            width: 0; 
+            height: 0; 
+            background-color: blue;
+            transition: width 1s, height 1s, transform 1s;
+            opacity: 1; 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        #out_box:hover #text_box {
+            width: 100%;  /* 백그라운드 사진이랑 크기 같게*/
+            height: 100%;
+            opacity: 1; 
+            transform: translate(-50%, -50%) rotate(360deg); /* 360도 회전 */
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="out_box">
+        <div id="text_box" ></div>
+    </div>
+</body>
+</html>
