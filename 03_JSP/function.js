@@ -5,6 +5,10 @@
 
 // }
 // funtion [함수명](입력) { ~~~~~~};
+
+// printHello();
+// function printHello();    // 함수선언
+
 // */
 // function printHello(){  // 함수 정의를 만드는게 제일 먼저다 -> 함수 호출이 이루어진다
 //     console.log("Hello");
@@ -29,6 +33,7 @@
 //     obj.name = 'coder';
 // }
 
+// //자바에서는 객체를 생성하기 위해서는 클래스가 필요하지만 JSP 에는 필요가없음
 // const ellie = {name: 'ellie'};  // ellie객체 생성
 // console.log(ellie);
 // changeName(ellie);
