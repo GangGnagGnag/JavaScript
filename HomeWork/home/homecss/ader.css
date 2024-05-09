@@ -1,3 +1,6 @@
+a{
+    text-decoration: none;
+}
 #logo img {
     max-width: 50; /* 최대 너비를 200px로 설정 */
     max-height: 10px; /* 최대 높이를 100px로 설정 */
