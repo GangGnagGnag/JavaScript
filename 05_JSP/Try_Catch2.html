@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숫자 맞추기</title>
+</head>
+<body>
+    <script>
+        let solution = 55; // 정답 숫자를 설정합니다.
+        
+        function guessNumber() {
+            try {
+                let guessedNumber = parseInt(document.getElementById('number').value); // 입력 필드에서 추측한 숫자를 가져옵니다.
+                let output = document.getElementById('output'); // 출력 요소를 가져옵니다.
+                
+                if (isNaN(guessedNumber)) {
+                    throw "올바른 숫자를 입력하세요.";
+                }
+                if (guessedNumber === solution) {
+                    output.innerHTML = '정답입니다! 올바른 숫자를 맞췄습니다.';
+                } else if (guessedNumber < solution) {
+                    output.innerHTML = '너무 낮습니다. 더 높은 숫자를 시도하세요.';
+                } else {
+                    output.innerHTML = '너무 높습니다. 더 낮은 숫자를 시도하세요.';
+                }
+            } catch (err) {
+                document.getElementById('output').innerHTML = '오류: ' + err;
+            }
+        }
+    </script>
+    <h1>숫자 맞추기</h1>
+    <p>1부터 100 사이의 숫자를 추측하세요:</p>
+    <input type="text" id="number">
+    <button onclick="guessNumber()">숫자 추측</button>
+    <p id="output"></p> <!-- 여기에 출력이 표시됩니다 -->
+</body>
+</html>

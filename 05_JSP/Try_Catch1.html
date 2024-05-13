@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let solution = 55;
+        function test() {
+            try{
+                let x = document.getElementById("number").value;
+                console.log(typeof(x));
+                console.log(typeof(solution));
+                if(x > solution) throw "입력한 숫자가 더 크농";
+                else if(x < solution) throw "입력한 숫자가 더 짝농"; 
+                else if(x == solution) throw "정답입니다.";
+        } catch(err) {
+            let e = document.getElementById("msg");
+            e.innerHTML = '힌트 : ' + err;
+        }
+    }
+    </script>
+    <h1>1 부터 100사이의 숫자 입력</h1>
+    <input type="text" id="number">
+    <button type="button" onclick="test()">클릭</button>
+    <p id="msg"></p>
+</body>
+</html>

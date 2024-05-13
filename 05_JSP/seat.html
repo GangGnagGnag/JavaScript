@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자리배치2</title>
+    <style>
+        table, tr, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>자리배치도</h1>
+    <script>
+        let memNum = prompt("입장객은 몇명입니까?");
+        let colNum = prompt("몇 줄로 나눕니까?");
+
+        // 필요한 행 수 계산
+        let rowNum;
+        if (memNum % colNum == 0)
+            rowNum = parseInt(memNum / colNum);
+        else
+            rowNum = parseInt(memNum / colNum) + 1;
+
+        // 표 시작
+        document.write("<table>");
+
+        // 행(row) 반복
+        for (let i = 0; i < rowNum; i++) {
+            document.write("<tr>"); // 새로운 행 시작
+
+            // 열(column) 반복
+            for (let j = 0; j < colNum; j++) {
+                let memberId = i * colNum + j + 1; // 각 자리의 번호 계산
+                if (memberId <= memNum) { // 만약 회원 수 이내에 있다면
+                    document.write("<td>자리 " + memberId + "</td>"); // 자리 배치 표시
+                } else {
+                    document.write("<td></td>"); // 회원 수를 초과하는 자리는 비어있음으로 표시
+                }
+            }
+            document.write("</tr>"); // 행 끝
+        }
+        
+        document.write("</table>"); // 표 끝
+    </script>
+</body>
+</html>

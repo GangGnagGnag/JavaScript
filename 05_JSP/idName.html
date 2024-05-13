@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="wlecome">반갑농</p>
+    <script>
+        const changeColor = (newColor) => {         //애로우 함수(화살표 함수)
+            const welc = document.getElementById("wlecome")
+            welc.style.color = newColor;
+        }
+    </script>
+    <button type="button" onclick="changeColor('red');">빨강</button>
+    <button type="button" onclick="changeColor('blue');">파랑</button>
+</body>
+</html>

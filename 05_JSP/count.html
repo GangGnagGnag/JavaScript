@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let memNum = prompt("입장객은 몇명입니까?");
+        let colNum = prompt("몇 줄로 나눕니까?");
+
+        if (memNum % colNum == 0)
+            rowNum = parseInt(memNum / colNum);
+        else
+            rowNum = parseInt(memNum / colNum) + 1;
+
+        for (let i = 0; i < rowNum; i++) { 
+            for (let j = 0; j < colNum; j++) {
+                let number = i * colNum + j + 1; // 각 자리의 번호 계산
+                if (number <= memNum) {
+                    document.write(number + " ");
+                }
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+
+</html>
