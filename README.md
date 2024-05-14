@@ -23,10 +23,13 @@ JSP 학습
     3. async await
         Producer:  콜백함수 대신에 사용하는 비동기 오브젝트, producer와 consumer를 연결해 주는 특별한 js 객체
 
-            promise를 사용해서 비동기 실행 함수를 만들고 실행 결과가 성공되면 resolve(value)를 호출하여 결과값을 consumer에게 전달한다. 
-            실패하게 되면 reject(error)를 호출하여 에러를 전달한다 
+            promise를 사용해서 비동기 실행 함수를 만들고 실행 결과가 
+            **성공되면 resolve(value)**를 호출하여 결과값을 consumer에게 전달한다. 
+            **실패하게 되면 reject(error)**를 호출하여 에러를 전달한다 
 
             대기(pending)
             이행(fulfilled)
             거부(rejected)
             consumer
+
+- then이란 메서드는 실행하고나서 리턴을 하는데 then 을 리턴한다.
