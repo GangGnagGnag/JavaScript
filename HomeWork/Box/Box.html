@@ -5,7 +5,6 @@
     <style>
         *{margin: 0; padding: 0;}
         #out_box {
-            position: relative;
             width: 800px; 
             height: 600px; 
             margin: 500px auto;
@@ -13,27 +12,25 @@
             background-size: cover; 
         }
         #text_box {
-            width: 0; 
-            height: 0; 
+            width: 100%; 
+            height: 100%; 
             background-color: blue;
-            transition: width 1s, height 1s, transform 1s;
-            opacity: 1; 
-            position: absolute;
-            top: 50%;
-            left: 50%;
+            color: white;
+            font-size: 8em;
+            transform: scale(0) rotateZ(0);
+            transition-duration: 0.5s;
+            text-align: center;
+            line-height: 500px;
         }
         #out_box:hover #text_box {
-            width: 100%;  /* 백그라운드 사진이랑 크기 같게*/
-            height: 100%;
-            opacity: 1; 
-            transform: translate(-50%, -50%) rotate(360deg); /* 360도 회전 */
+            transform: scale(1) rotateZ(360deg); /*360도 회전*/
         }
         
     </style>
 </head>
 <body>
     <div id="out_box">
-        <div id="text_box" ></div>
+        <div id="text_box">significant</div>
     </div>
 </body>
 </html>
