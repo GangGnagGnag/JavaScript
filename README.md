@@ -1,5 +1,5 @@
-# JSP
-JSP 학습
+# JavaScript
+JavaScript 학습
 
 
 - let: 지역변수
