@@ -1,5 +1,5 @@
-# JSP
-JSP 학습
+# JavaScript
+JavaScript 학습
 
 
 - let: 지역변수
@@ -33,3 +33,10 @@ JSP 학습
             consumer
 
 - then이란 메서드는 실행하고나서 리턴을 하는데 then 을 리턴한다.
+
+- Fetch API = 백엔드와 통신하는 API
+    - fetch(url, options) return 타입은 promise 타입의 객체
+    - .then() 메서드는 Promise를 처리할 수 있는 메서드 이다.
+
+- post 방식의 경우에는 header에 content-type; charset=utf-8을 필히 작성해야 한다.
+    - method: 'post'
